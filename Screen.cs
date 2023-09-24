@@ -34,40 +34,7 @@ namespace HelperLibrary
         public abstract void Draw(SpriteBatch spriteBatch);
     }
 
-    public class MenuScreen : Screen
-    {
-        public override void Begin()
-        {
 
-        }
-
-        public override void Draw(SpriteBatch spriteBatch)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Screenum Update(GameTime gameTime)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class GameScreen : Screen
-    {
-        public override void Begin()
-        {
-
-        }
-
-        public override void Draw(SpriteBatch spriteBatch)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Screenum Update(GameTime gameTime)
-        {
-            throw new NotImplementedException();
-        }
-    }
 
     public class ScreenManager
     {
