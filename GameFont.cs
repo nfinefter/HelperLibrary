@@ -9,10 +9,15 @@ using System.Threading.Tasks;
 
 namespace HelperLibrary
 {
-    public abstract class GameFont : GameObject
+    public sealed class GameFont : GameObject
     {
         SpriteFont Font; 
         public string Text;
+
+        public override Vector2 Origin => throw new NotImplementedException();
+
+        public override Rectangle? SourceRectangle => throw new NotImplementedException();
+
         public GameFont(SpriteFont font, string text, Rectangle pos, Color color, float rotation)
             : base(pos, color, rotation)
         {
@@ -23,6 +28,11 @@ namespace HelperLibrary
         public void DrawString(SpriteBatch sb)
         {
             sb.DrawString(Font, Text, new Vector2(Pos.X, Pos.Y), Color);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            throw new NotImplementedException();
         }
     }
 }
